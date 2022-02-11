@@ -1,0 +1,12 @@
+{
+  "name": "p3_lemee_alexis",
+  "version": "1.0.0",
+  "description": "OhMyFood!",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC"
+}
