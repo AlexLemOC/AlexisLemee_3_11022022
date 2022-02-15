@@ -6,4 +6,26 @@ html body {
   font-family: "Roboto", sans-serif;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLHFHQUFBO0FBRUo7RUFDQSxpQ0FBQTtBQ0FKO0FERUk7RUFDSSxpQ0FBQTtBQ0FSIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+@media screen and (max-width: 599px) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .header-box-title {
+    display: flex;
+    align-items: baseline;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 599px) {
+  .header-box-title-icon {
+    padding-right: 12px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLHFHQUFBO0FBRUo7RUFDQSxpQ0FBQTtBQ0FKO0FERUk7RUFDSSxpQ0FBQTtBQ0FSOztBRFVJO0VBTUE7SUFFUSxhQUFBO0lBQ0Esc0JBQUE7SUFDQSxXQUFBO0VDYlY7QUFDRjtBREVJO0VBWUk7SUFFUSxhQUFBO0lBQ0EscUJBQUE7SUFDQSxVQUFBO0lBQ0EsV0FBQTtJQUNBLHVCQUFBO0VDWmQ7QUFDRjtBRFBJO0VBb0JRO0lBRVEsbUJBQUE7RUNYbEI7QUFDRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

@@ -7,3 +7,246 @@ html {
         font-family: 'Roboto', sans-serif;
     }
 }
+
+//maps//
+$breakpoints: (mobile:599px);
+$colors: (color-primary: #9356DC, color-secondary: #FF79DA, color-tertiary: #99E2D0, white: #FFF, shadow:#C1C1C1);
+
+//variables//
+
+
+//mixins//
+@mixin mobile-only{
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+body{
+    margin: 0%;
+}
+
+.header {
+    width: 100%;
+    &-title{
+        @include mobile-only{
+            position: absolute;
+            width: 100%;
+            box-shadow: 0px 5px 10px map-get($colors, shadow);
+            margin: 0px 0px 5px 0px;
+            padding: 12px 0% 12px 30%;
+            z-index: 2;
+        }
+    }
+    &-box{
+        @include mobile-only {
+            position: relative;
+            padding-top: 72px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            width: 100%;
+            background-color: darken(map-get($colors,white), 3.5%);
+        }
+        &-title{
+            @include mobile-only{
+                display: flex;
+                align-items: baseline;
+                margin: 0%;
+                padding: 0% 0% 0% 30%;
+                justify-content: left;
+                background-color: darken(map-get($colors,white), 8.4%);
+            }
+            &-icon{
+                @include mobile-only{
+                    padding-right: 12px;
+                }
+            }
+        }
+        &-elements{
+            @include mobile-only{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.bouton{
+    &-index{
+        @include mobile-only{
+            display: inline-block;
+            margin: 0% 0% 8% 0%;
+            background: map-get($colors, color-secondary);
+            color: map-get($colors, white);
+            padding: 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px map-get($colors, shadow);
+        }
+    }
+}
+
+.Use{
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+    }
+    & h2{
+        margin-left: 20px;
+    }
+    &-choice{
+        @include mobile-only{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px;
+            margin: 20px;
+            border-radius: 20px;
+            background-color: darken(map-get($colors,white), 3.5%);
+            box-shadow: 0px 5px 10px map-get($colors, shadow);
+        }
+        & p{
+            @include mobile-only{
+                float: inline-start;
+                margin: 0px 12px 0px -25px;
+                padding: 6px 10px 4px 10px;
+                background-color: map-get($colors,color-primary);
+                border-radius: 16px;
+                color: map-get($colors,white);
+                font-weight: bold;
+            }
+        }
+        & i{
+            @include mobile-only{
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+.Resto{
+    @include mobile-only{
+        background-color: darken(map-get($colors,white), 3.5%);
+        display: flex;
+        flex-direction: column;
+        padding: 0pc 20px 0px 20px;
+    }
+    &-title{
+        @include mobile-only{
+            margin: 30px 0px 10px 0px;
+            padding: 12px 0px 12px 0px;
+            font-size: 26px;
+            font-weight: bolder;
+        }
+    }
+    &-card{
+        @include mobile-only{
+            display: flex;
+            flex-direction: column;
+            background-color: map-get($colors,white);
+            margin-bottom: 20px;
+            border-radius: 20px;
+            z-index: 1;
+            box-shadow: 0px 5px 10px map-get($colors, shadow);
+        }
+        &__img{
+            @include mobile-only{
+                position: relative;
+                text-align: center;
+            }
+            & img{
+                @include mobile-only{
+                    width: 100%;
+                    border-radius: 20px 20px 0px 0px;
+                    max-height: 180px;
+                    object-fit: cover;
+                }
+            }
+            & span{
+                @include mobile-only{
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    z-index: 2;
+                    color: darken(map-get($colors,color-tertiary),50%);
+                    font-weight: bold;
+                    padding: 6px;
+                    background-color: map-get($colors,color-tertiary);
+                    border-radius: 5px;
+                }
+            }
+        }
+        &__text{
+            @include mobile-only{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                margin: 20px 0px 20px 0px;
+            }
+            & h5{
+                @include mobile-only{
+                    font-size: 18px;
+                    font-weight: bolder;
+                    padding-bottom: 6px;
+                    margin: 0%;
+                }
+            }
+            & p{
+                @include mobile-only{
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 0%;
+                    margin: 0%;
+                }
+            }
+            & span{
+                @include mobile-only{
+                    position: absolute;
+                    top: 10%;
+                    right: 30px;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+.Footer{
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 32px 32px;
+        background-color: darken(map-get($colors,white), 79.3%);
+        color: map-get($colors, white);
+    }
+    &-title{
+        @include mobile-only{
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+    &-withIco{
+        @include mobile-only{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 30px;
+        }
+        & i{
+            width: 28px;
+            padding-right: 5px;
+        }
+    }
+    &-noIco{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin: 0%;
+    }
+}
