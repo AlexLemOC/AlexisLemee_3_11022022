@@ -8,86 +8,152 @@
     <link rel="stylesheet" href="css/style.css">
     <title>À la française</title>
 </head>
-<body>
-    <header>
-        <span><i class="fas fa-arrow-left"></i></span>
-        <h1>ohmyfood</h1>
+<body class="Body">
+    <header class="Body-headerMenu">
+        <span class="Body-headerMenu-ico"><a href="Index.html"><i class="fas fa-arrow-left"></a></i></span>
+        <h1 class="Body-headerMenu-title">ohmyfood</h1>
+        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="française">
     </header>
-    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="française">
-    <article>
-        <div>
+    <article class="Body-menuBody menuBody">
+        <div class="menuBody-title">
             <h2>À la française</h2>
-            <span><i class="far fa-heart"></i></span>
+            <div class="menuBody-ico">
+                <i class="far fa-heart coeur-heart"></i>
+                <i class="fas fa-heart coeur-heart-full"></i>
+            </div>
         </div>
-        <section class="entrees">
-            <h3>ENTRÉES</h3>
-            <div>
-                <h4>Tartare de poulpe acidulé</h4>
-                <p>Aux zests d'orange</p>
-                <span>25€</span>
+        <section class="compo">
+            <h3 class="compo-title">ENTRÉES</h3>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="prix">25€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Velouté de légumes d'antan</h4>
-                <p>Carotte, panais, topinambour</p>
-                <span>35€</span>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <p>Carotte, panais, topinambour</p>
+                </div>
+                <div class="prix">35€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Soupe à l'oignon</h4>
-                <p>Revisitée</p>
-                <span>20€</span>
-            </div>
-        </section>
-        <section class="plats">
-            <h3>PLATS</h3>
-            <div>
-                <h4>Coquilles Saint-Jacques</h4>
-                <p>Accompagnées d'une purée de panais</p>
-                <span>40€</span>
-            </div>
-            <div>
-                <h4>Magret de canard</h4>
-                <p>Et parmentier de pommes de terres</p>
-                <span>35€</span>
-            </div>
-            <div>
-                <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                <p>Sur son lit de gnocchis aux légumes</p>
-                <span>44€</span>
-            </div>
-        </section>
-        <section class="desserts">
-            <h3>DESSERTS</h3>
-            <div>
-                <h3>Pétales de violettes glacés</h3>
-                <p>Et purée de noisettes</p>
-                <span>18€</span>
-            </div>
-            <div>
-                <h3>Fondant au chocolat</h3>
-                <p>Revisité</p>
-                <span>22€</span>
-            </div>
-            <div>
-                <h3>Millefeuille croustillant</h3>
-                <p>Myrtilles et pâte d'amande</p>
-                <span>23€</span>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Soupe à l'oignon</h4>
+                    <p>Revisitée</p>
+                </div>
+                <div class="prix">20€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="btn-commander">
-            <input type="submit" value="Commander">
+        <section class="compo">
+            <h3 class="compo-title">PLATS</h3>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p>Accompagnées d'une purée de panais</p>
+                </div>
+                <div class="prix">40€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Magret de canard</h4>
+                    <p>Et parmentier de pommes de terres</p>
+                </div>
+                <div class="prix">35€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="prix">44€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="compo">
+            <h3 class="compo-title">DESSERTS</h3>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Pétales de violettes glacés</h4>
+                    <p>Et purée de noisettes</p>
+                </div>
+                <div class="prix">18€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Fondant au chocolat</h4>
+                    <p>Revisité</p>
+                </div>
+                <div class="prix">22€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="compo-choix">
+                <div class="compo-choix-texte">
+                    <h4>Millefeuille croustillant</h4>
+                    <p>Myrtilles et pâte d'amande</p>
+                </div>
+                <div class="prix">23€</div>
+                <div class="checkmark">
+                    <div class="check-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Body-btn">
+            <a href="#"><input type="submit" value="Commander" class="bouton-cmd"></a>
         </div>
     </article>
-    <footer>
-        <h1>ohmyfood</h1>
-        <div>
+    <footer class="Footer Body-footer">
+        <h1 class="Footer-title">ohmyfood</h1>
+        <div class="Footer-withIco">
             <i class="fas fa-utensils"></i>
             <p>Proposer un réstaurant</p>
         </div>
-        <div>
+        <div class="Footer-withIco">
             <i class="fas fa-hands-helping"></i>
             <p>Devenir partenaire</p>
         </div>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <p class="Footer-noIco">Mentions légales</p>
+        <p class="Footer-noIco">Contact</p>
     </footer>
 </body>
