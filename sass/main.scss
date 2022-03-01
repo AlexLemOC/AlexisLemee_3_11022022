@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 html {
     h1{
     font-family: 'Shrikhand', cursive;
@@ -9,7 +10,7 @@ html {
 }
 
 //maps//
-$breakpoints: (mobile:599px, overtablet:600px, tablet:992px, desktop:993px);
+$breakpoints: (small:424px, mobile:599px, overtablet:600px, tablet:992px, desktop:993px);
 $colors: (color-primary: #9356DC, color-secondary: #FF79DA, color-tertiary: #99E2D0, white: #FFF, shadow:#C1C1C1);
 
 //variables//
@@ -17,7 +18,7 @@ $colors: (color-primary: #9356DC, color-secondary: #FF79DA, color-tertiary: #99E
 
 //mixins//
 @mixin mobile-only{
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+    @media screen and (max-width: map-get($breakpoints, mobile)) and (min-width: map-get($breakpoints,small)){
         @content;
     }
 }
@@ -36,7 +37,11 @@ $colors: (color-primary: #9356DC, color-secondary: #FF79DA, color-tertiary: #99E
         @content;
     }
 }
-
+@mixin small{
+    @media screen and (max-width: map-get($breakpoints, small)){
+        @content;
+    }
+}
 
 body {
     margin: 0%;
@@ -380,6 +385,7 @@ body {
 
             & h3{
                 margin-bottom: 60px;
+                font-weight: 500;
             }
 
             & a{
@@ -617,7 +623,7 @@ body {
             }
             & p{
                 font-size: 18px;
-                font-weight: bold;
+                font-weight: 500;
                 padding: 0%;
                 margin: 0%;
             }
@@ -817,7 +823,8 @@ body {
     &-title{
         border-bottom: map-get($colors, color-tertiary) 4px solid;
         padding: 0px 0px 8px 0px;
-        width: 50px;
+        width: 40px;
+        font-weight: 500;
     }
     &-choix{
         display: flex;
@@ -839,8 +846,11 @@ body {
             & h4{
                 margin: 0%;
                 padding: 6px 0px 3px 0px;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: bolder;
+                @include small{
+                    font-size: 13px;
+                }
                 
             }
             & p{
@@ -862,6 +872,12 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    @include mobile-only{
+        font-size: 15px;
+    }
+    @include small{
+        font-size: 11px;
+    }
 }
 
 //panneau coulissant

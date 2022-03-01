@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
 html h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -69,7 +69,7 @@ body {
     align-items: center;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(1) {
     top: 40%;
     left: 30%;
@@ -82,7 +82,7 @@ body {
     animation-delay: 0s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(2) {
     top: 40%;
     left: 45%;
@@ -95,7 +95,7 @@ body {
     animation-delay: -0.4s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(3) {
     top: 40%;
     right: 30%;
@@ -108,7 +108,7 @@ body {
     animation-delay: -0.8s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(4) {
     top: 48%;
     left: 30%;
@@ -121,7 +121,7 @@ body {
     animation-delay: -0.4s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(5) {
     top: 48%;
     left: 45%;
@@ -134,7 +134,7 @@ body {
     animation-delay: -0.8s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(6) {
     top: 48%;
     right: 30%;
@@ -147,7 +147,7 @@ body {
     animation-delay: -1.2s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(7) {
     top: 56%;
     left: 30%;
@@ -160,7 +160,7 @@ body {
     animation-delay: -0.8s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(8) {
     top: 56%;
     left: 45%;
@@ -173,7 +173,7 @@ body {
     animation-delay: -1.2s;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 424px) {
   .dots-grid div:nth-child(9) {
     top: 56%;
     right: 30%;
@@ -376,6 +376,7 @@ body {
 }
 .header-box-elements h3 {
   margin-bottom: 60px;
+  font-weight: 500;
 }
 .header-box-elements a {
   text-decoration: none;
@@ -609,7 +610,7 @@ body {
 }
 .Resto-card-text p {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   padding: 0%;
   margin: 0%;
 }
@@ -790,7 +791,8 @@ body {
 .compo-title {
   border-bottom: #99E2D0 4px solid;
   padding: 0px 0px 8px 0px;
-  width: 50px;
+  width: 40px;
+  font-weight: 500;
 }
 .compo-choix {
   display: flex;
@@ -811,8 +813,13 @@ body {
 .compo-choix-texte h4 {
   margin: 0%;
   padding: 6px 0px 3px 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
+}
+@media screen and (max-width: 424px) {
+  .compo-choix-texte h4 {
+    font-size: 13px;
+  }
 }
 .compo-choix-texte p {
   margin: 0%;
@@ -830,6 +837,16 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+@media screen and (max-width: 599px) and (min-width: 424px) {
+  .hide {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .hide {
+    font-size: 11px;
+  }
 }
 
 .checkmark {
