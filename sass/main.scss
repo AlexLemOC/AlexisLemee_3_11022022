@@ -132,8 +132,8 @@ body {
                 }
                 @include small{
                     top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    left: 45%;
+                    animation-delay: -0.4s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -148,8 +148,8 @@ body {
                 }
                 @include small{
                     top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    right: 30%;
+                    animation-delay: -0.8s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -163,9 +163,9 @@ body {
                     animation-delay: -0.4s;
                 }
                 @include small{
-                    top: 40%;
+                    top: 48%;
                     left: 30%;
-                    animation-delay: 0s;
+                    animation-delay: -0.4s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -179,9 +179,9 @@ body {
                     animation-delay: -0.8s;
                 }
                 @include small{
-                    top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    top: 48%;
+                    left: 45%;
+                    animation-delay: -0.8s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -195,9 +195,9 @@ body {
                     animation-delay: -1.2s;
                 }
                 @include small{
-                    top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    top: 48%;
+                    right: 30%;
+                    animation-delay: -1.2s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -211,9 +211,9 @@ body {
                     animation-delay: -0.8s;
                 }
                 @include small{
-                    top: 40%;
+                    top: 56%;
                     left: 30%;
-                    animation-delay: 0s;
+                    animation-delay: -0.8s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -227,9 +227,9 @@ body {
                     animation-delay: -1.2s;
                 }
                 @include small{
-                    top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    top: 56%;
+                    left: 45%;
+                    animation-delay: -1.2s;
                 }
                 @include over-tablet{
                     margin: 20px;
@@ -243,9 +243,9 @@ body {
                     animation-delay: -1.6s;
                 }
                 @include small{
-                    top: 40%;
-                    left: 30%;
-                    animation-delay: 0s;
+                    top: 56%;
+                    right: 30%;
+                    animation-delay: -1.6s;
                 }
                 @include over-tablet{
                     margin: 20px;

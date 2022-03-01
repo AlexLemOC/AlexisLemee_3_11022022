@@ -99,8 +99,8 @@ body {
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(2) {
     top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    left: 45%;
+    animation-delay: -0.4s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -119,8 +119,8 @@ body {
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(3) {
     top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    right: 30%;
+    animation-delay: -0.8s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -138,9 +138,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(4) {
-    top: 40%;
+    top: 48%;
     left: 30%;
-    animation-delay: 0s;
+    animation-delay: -0.4s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -158,9 +158,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(5) {
-    top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    top: 48%;
+    left: 45%;
+    animation-delay: -0.8s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -178,9 +178,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(6) {
-    top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    top: 48%;
+    right: 30%;
+    animation-delay: -1.2s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -198,9 +198,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(7) {
-    top: 40%;
+    top: 56%;
     left: 30%;
-    animation-delay: 0s;
+    animation-delay: -0.8s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -218,9 +218,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(8) {
-    top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    top: 56%;
+    left: 45%;
+    animation-delay: -1.2s;
   }
 }
 @media screen and (min-width: 600px) {
@@ -238,9 +238,9 @@ body {
 }
 @media screen and (max-width: 424px) {
   .dots-grid div:nth-child(9) {
-    top: 40%;
-    left: 30%;
-    animation-delay: 0s;
+    top: 56%;
+    right: 30%;
+    animation-delay: -1.6s;
   }
 }
 @media screen and (min-width: 600px) {
