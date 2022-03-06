@@ -624,7 +624,7 @@ body {
         box-shadow: 0px 5px 10px map-get($colors, shadow);
         
         &:hover{
-            background-image: lighten(map-get($colors,color-primary),50%);
+            //background-image: lighten(map-get($colors,color-primary),50%);
             box-shadow: darken(map-get($colors,shadow),50%) 0px 5px 10px;
         }
         @include desktop-only{
@@ -711,11 +711,6 @@ body {
         animation: pulse 1s 0.3s infinite;
         opacity: 1;
         }
-        
-        /*&:active {
-        animation: pulse 0.6s 0.3s forwards;
-        transition: background-color 500ms;
-        }*/
     
         @keyframes pulse {
             0% {
@@ -930,14 +925,14 @@ body {
 //panneau coulissant
 
 .checkmark {
-    size: 100%;
+    //size: 100%;
     width: 0px;
     position: relative;
     background-color: map-get($colors, color-tertiary);
     transition: width 0.5s;
 }
 .check-circle {
-    size: 25px;
+    //size: 25px;
     position: absolute;
     left: 30%;
     top: 40%;
@@ -950,7 +945,7 @@ body {
 
     & i{
         color: map-get($colors, white);
-        size: 25px;
+        //size: 25px;
         transform: scale(1.4);
     }
 }
